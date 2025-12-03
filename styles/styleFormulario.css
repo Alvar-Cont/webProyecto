@@ -1,0 +1,392 @@
+/* Importación de fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans:wght@400;700&display=swap');
+
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background-color: #FFFBF0;
+    color: #570000;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabecera */
+header {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header > img:first-of-type {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease-in-out;
+}
+
+header > img:first-of-type:hover {
+    filter: brightness(1.1);
+}
+
+header h1 {
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bangers', cursive;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #570000;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.9),
+                 0 0 30px rgba(242, 135, 5, 0.5);
+}
+
+header h2 {
+    position: absolute;
+    top: 32vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #570000;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+
+header h2:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.9);
+}
+
+/* Navegación */
+nav {
+    background-color: #F28705;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px);
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+    background-color: #FFD361;
+    color: #570000;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Sección */
+section {
+    text-align: center;
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+/* Título */
+h3 {
+    color: #570000;
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+h3:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 6px rgba(242, 135, 5, 0.3);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+
+fieldset {
+    background: linear-gradient(135deg, #F28705 0%, #FF9F24 100%);
+    border: none;
+    border-radius: 50%;
+    width: 55vh;
+    height: 55vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+fieldset:hover {
+    box-shadow: 0 15px 40px rgba(242, 135, 5, 0.4);
+}
+
+legend {
+    background-color: transparent;
+    font-family: 'Bangers', cursive;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #570000;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+fieldset:hover legend {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(87, 0, 0, 0.6);
+}
+
+label {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+label:hover {
+    transform: translateX(3px);
+}
+
+input, select, textarea {
+    width: 90%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    margin-top: 0.3rem;
+    background-color: #FFFBF0;
+    color: #570000;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(255, 211, 97, 0.6);
+    transform: scale(1.02);
+    background-color: #FFF;
+}
+
+.fieldset-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 0.6rem 0;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.fieldset-options label {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+input[type="radio"]:hover, 
+input[type="checkbox"]:hover {
+    transform: scale(1.3);
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Botón de envío */
+button {
+    background: linear-gradient(135deg, #F28705 0%, #FF9F24 100%);
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin-top: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #FFD361 0%, #FFC933 100%);
+    color: #570000;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 35px rgba(242, 135, 5, 0.5);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+button:active {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 0 6px 20px rgba(242, 135, 5, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: #570000;
+    color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer h4 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+footer h4:hover {
+    color: #FFD361;
+    text-shadow: 3px 3px 6px rgba(242, 135, 5, 0.5);
+}
+
+footer > div {
+    margin: 2rem 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+footer ul li:hover {
+    transform: translateY(-5px);
+}
+
+footer ul li a img {
+    width: 13vh;
+    height: 13vh;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer ul li a img:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(242, 135, 5, 0.5);
+    filter: brightness(1.2);
+}
+
+footer address p {
+    margin: 0.5rem 0;
+    font-style: normal;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+footer address p:hover {
+    color: #FFD361;
+    transform: translateX(5px);
+}
+
+footer > div:last-child p {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+footer > div:last-child p:hover {
+    color: #FFD361;
+}
+
+/* Media queries */
+@media (max-width: 795px) {
+    fieldset {
+        width: 45vh;
+        height: 45vh;
+        padding: 2rem 1.5rem;
+    }
+    
+    legend {
+        font-size: 1.1rem;
+        top: 1.5rem;
+    }
+    
+    label {
+        font-size: 0.8rem;
+    }
+    
+    button {
+        width: 150px;
+        height: 150px;
+        font-size: 1.2rem;
+    }
+}
+

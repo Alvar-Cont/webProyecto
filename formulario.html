@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styleFormulario.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/cabecera.png" alt="Imagen de inicio Dragon Ball">
+        <h1>Dragon Fann</h1>
+        <h2>La Super página sayajina definitiva</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="index.html#autor">Autor</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Anexo:Pel%C3%ADculas_de_Dragon_Ball" target="_blank">OVA/Películas</a></li> <!--Enlace externo-->
+                <li><a href="https://vandal.elespanol.com/sagas/dragon-ball" target="_blank">Videojuegos</a></li><!--Enlace externo-->
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="formulario">
+        <h3>Formulario para Fans</h3>
+
+        <form action="#" method="">
+            <fieldset>
+                <legend>Información Básica</legend>
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Género</legend>
+                <div class="opciones-formulario">
+                    <input type="radio" id="genero_hombre" name="genero" value="Hombre">
+                    <label for="genero_hombre">Hombre</label>
+                </div>
+                <div class="opciones-formulario">
+                    <input type="radio" id="genero_mujer" name="genero" value="Mujer">
+                    <label for="genero_mujer">Mujer</label>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Transformaciones Favoritas</legend>
+                <div class="opciones-formulario">
+                    <input type="checkbox" id="ssj" name="transformaciones" value="super_saiyan">
+                    <label for="ssj">Super Saiyajin</label>
+                </div>
+                <div class="opciones-formulario">
+                    <input type="checkbox" id="ozaru" name="transformaciones" value="ozaru">
+                    <label for="ozaru">Ozaru (el mono gigante)</label>
+                </div>
+                <div class="opciones-formulario">
+                     <input type="checkbox" id="cell" name="transformaciones" value="cell_perfecto">
+                    <label for="trans_cell">Cell Perfecto</label>
+                </div>
+                <div class="opciones-formulario">
+                     <input type="checkbox" id="freezer" name="transformaciones" value="freezer">
+                    <label for="trans_freezer">Transformación de Freezer</label>
+                </div>
+                <div class="opciones-formulario">
+                     <input type="checkbox" id="fusion" name="transformaciones" value="fusion">
+                    <label for="trans_fusion">Fusión (Gogeta/Vegetto)</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Personaje Favorito</legend>
+
+                <label for="personaje">Selecciona tu personaje favorito:</label>
+                <select id="personaje" name="personaje_favorito">
+                    <option value="">-- Selecciona un personaje --</option>
+                    <optgroup label="Héroes">
+                        <option value="goku">Son Goku</option>
+                        <option value="vegeta">Vegeta</option>
+                        <option value="gohan">Gohan</option>
+                        <option value="piccolo">Piccolo</option>
+                        <option value="krilin">Krilin</option>
+                        <option value="trunks">Trunks</option>
+                    </optgroup>
+                    <optgroup label="Villanos">
+                        <option value="freezer">Freezer</option>
+                        <option value="cell">Cell</option>
+                        <option value="majin_buu">Majin Buu</option>
+                        <option value="kid_buu">Kid Buu</option>
+                        <option value="broly">Broly</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Saga Favorita</legend>
+
+                <label for="saga">¿Cuál es tu saga favorita?</label>
+                <select id="saga" name="saga_favorita">
+                    <option value="inicio">Saga de Inicio</option>
+                    <option value="saiyan">Saga Saiyajin</option>
+                    <option value="freezer">Saga de Freezer</option>
+                    <option value="cell">Saga de Cell</option>
+                    <option value="buu">Saga de Majin Buu</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <label for="cumpleanos">Fecha de cumpleaños:</label>
+                <input type="date" id="cumpleanos" name="cumpleanos">
+
+                <label for="comentarios">Cuéntanos por qué te gusta Dragon Ball:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe aqui tus comentarios..."></textarea>
+            </fieldset>           
+        </form>
+        <div class="formulario-boton">
+                <button type="submit">Enviar</button>
+            </div>
+    </section>
+    </main>
+    <footer>
+        <div>
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a href="https://x.com/DB_official_en" target="_blank"><img src="images/X_db.jpg"
+                            alt="x de dragon ball oficial"></a></li>
+                <li><a href="https://x.com/toyotaro_vjump?lang=es" target="_blank"><img src="images/x_toyotaro.jpg"
+                            alt="x de dragon ball oficial"></a></li>
+                <li><a href="https://x.com/mangaplus_o?lang=en" target="_blank"><img src="images/x_manga_plus.png"
+                            alt="x de dragon ball oficial"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Contacto</h4>
+            <address>
+                <p>Correo: alvaro@gmail.com</p>
+                <p>Teléfono:123-123-123</p>
+            </address>
+        </div>
+
+        <div>
+            <p>&copy; 2025 Dragon Ball Fan. Designed by Álvaro Contreras Ballesteros</p>
+            <p>Dragon Ball es propiedad de Akira Toriyama. Esta es una página fan.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
