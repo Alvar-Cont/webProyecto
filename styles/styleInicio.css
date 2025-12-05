@@ -17,26 +17,32 @@ body {
 
 /* Cabecera */
 header {
-    position: relative;
     width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-header > img:first-of-type {
+.cabecera {
+    position: relative;
     width: 100%;
     height: 50vh;
+    overflow: hidden;
+}
+
+.cabecera img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     transition: filter 0.3s ease-in-out;
 }
 
-header > img:first-of-type:hover {
+.cabecera:hover img {
     filter: brightness(1.1);
 }
 
-header h1 {
+.cabecera h1 {
     position: absolute;
-    top: 25vh;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Bangers', cursive;
@@ -49,11 +55,9 @@ header h1 {
     transition: 0.3s ease-in-out;
 }
 
-
-
-header h2 {
+.cabecera h2 {
     position: absolute;
-    top: 32vh;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Bangers', cursive;
@@ -64,7 +68,6 @@ header h2 {
     z-index: 2;
     transition: 0.3s ease-in-out;
 }
-
 
 
 /* Navegación */
