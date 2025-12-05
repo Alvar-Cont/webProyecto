@@ -148,7 +148,7 @@ img{
     width: 9em;
 }
 img#freezer,img#cell,img#majin_buu{
-    animation: aura ease-in-out-in-out infinite 3s ;
+    animation: aura ease-in-out infinite 3s ;
 }
 
 @keyframes aura {
