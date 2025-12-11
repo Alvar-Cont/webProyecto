@@ -199,7 +199,7 @@ section header h3:hover {
 #inicio > article:hover,
 #videojuegos > article:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(242, 135, 5, 0.35);
+    box-shadow: 0 15px 40px oklch(72.543% 0.17038 59.233 / 0.349);
 }
 
 /* Título de la tarjeta */
