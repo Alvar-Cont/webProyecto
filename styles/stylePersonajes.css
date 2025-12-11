@@ -1,13 +1,14 @@
 /* Importación de fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans:wght@400;700&display=swap');
 
-/* Reset y estilos generales */
+/* Toda la pagina */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Body*/
 body {
     font-family: 'Noto Sans', Arial, sans-serif;
     background-color: #FFFBF0;
@@ -18,7 +19,7 @@ body {
 /* Cabecera */
 header {
     width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
 }
 
 .cabecera {
@@ -30,7 +31,7 @@ header {
 
 .cabecera img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     display: block;
     transition: filter 0.3s ease-in-out;
@@ -50,7 +51,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     color: #570000;
-    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(255, 255, 255, 0.8);
     z-index: 2;
     transition: 0.3s ease-in-out;
 }
@@ -64,21 +65,17 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     color: #570000;
-    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(255, 255, 255, 0.8);
     z-index: 2;
     transition: 0.3s ease-in-out;
 }
 
-
-
 /* Navegación */
 nav {
     background-color: #F28705;
-    position: sticky;
-    top: 0;
     z-index: 98;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -88,14 +85,6 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul li {
-    margin: 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-nav ul li:hover {
-    transform: translateY(-3px);
-}
 
 nav ul li a {
     display: block;
@@ -105,18 +94,17 @@ nav ul li a {
     font-size: 1rem;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 nav ul li a:hover {
     background-color: #FFD361;
     color: #570000;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.5);
 }
-
 /* Main content */
 main {
-    max-width: 1200px;
+    max-width: 75vw;
     margin: 0 auto;
     padding: 2rem;
     position: relative;
@@ -125,19 +113,19 @@ main {
 /* Botón subir */
 #subir {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 1.875rem;
+    right: 1.875rem;
     width: 20vh;
     height: auto;
     cursor: pointer;
     z-index: 99;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3));
 }
 
 #subir:hover {
-    transform: scale(1.15) translateY(-5px);
-    filter: drop-shadow(5px 5px 12px rgba(242, 135, 5, 0.5));
+    transform: scale(1.15) translateY(-0.3rem);
+    filter: drop-shadow(0.3rem 0.3rem 0.75rem rgba(242, 135, 5, 0.5));
 }
 
 #subir:active {
@@ -149,8 +137,8 @@ section {
     margin: 3rem 0;
     padding: 2rem;
     background-color: #FFE26F;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    box-shadow: 0 0.4rem 1.25rem rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
 }
 
@@ -160,7 +148,7 @@ section header h3 {
     color: #570000;
     margin-bottom: 1.5rem;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
 }
 
@@ -171,13 +159,13 @@ article {
     margin: 2rem 0;
     padding: 1.5rem;
     background-color: #FFFBF0;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
     transition: 0.3s ease-in-out;
 }
 
 article:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 
 article h4 {
@@ -185,13 +173,13 @@ article h4 {
     font-size: 2rem;
     color: #570000;
     margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 0.06rem 0.06rem 0.2rem rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
 }
 
 article h4:hover {
     color: #F28705;
-    text-shadow: 2px 2px 4px rgba(242, 135, 5, 0.3);
+    text-shadow: 0.1rem 0.1rem 0.25rem rgba(242, 135, 5, 0.3);
 }
 
 article p {
@@ -224,14 +212,14 @@ article p {
 
 #personajes article img {
     height: 30vh;
-    border-radius: 10px;
+    border-radius: 0.6rem;
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 #personajes article img:hover {
     transform: scale(1.1) rotate(2deg);
-    box-shadow: 0 8px 20px rgba(242, 135, 5, 0.4);
+    box-shadow: 0 0.5rem 1.25rem rgba(242, 135, 5, 0.4);
     filter: brightness(1.1);
 }
 /* Contenedor de imágenes de personajes */
@@ -253,9 +241,9 @@ article p {
 /* Estilos base para ambas imágenes */
 #personajes article img {
     width: 15vh;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition:  0.5s ease-in-out;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
@@ -282,20 +270,20 @@ article p {
 
 .imagen-cambio:hover .imagen2_personaje {
     opacity: 1;
-    box-shadow: 0 8px 25px rgba(242, 135, 5, 0.6),
-                0 0 40px rgba(255, 211, 97, 0.5);
+    box-shadow: 0 0.5rem 1.5rem rgba(242, 135, 5, 0.6),
+                0 0 2.5rem rgba(255, 211, 97, 0.5);
 }
 
 /* Efecto de resplandor adicional */
 .imagen-cambio:hover::after {
     position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border-radius: 15px;
+    top: -0.3rem;
+    left: -0.3rem;
+    right: -0.3rem;
+    bottom: -0.3rem;
+    border-radius: 1rem;
     z-index: 0;
-    animation: pulse 0.5s ease-in-out-out;
+    animation: pulse 0.5s ease-in-out;
 }
 
 @keyframes pulse {
@@ -318,20 +306,20 @@ footer {
     color: #FFFFFF;
     padding: 2rem;
     margin-top: 3rem;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -0.25rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 footer h4 {
     font-family: 'Bangers', cursive;
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.3);
     transition: 0.3s ease-in-out;
 }
 
 footer h4:hover {
     color: #FFD361;
-    text-shadow: 3px 3px 6px rgba(242, 135, 5, 0.5);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(242, 135, 5, 0.5);
 }
 
 footer > div {
@@ -350,7 +338,7 @@ footer ul li {
 }
 
 footer ul li:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3rem);
 }
 
 footer ul li a img {
@@ -359,24 +347,24 @@ footer ul li a img {
     object-fit: cover;
     border-radius: 50%;
     transition: 0.3s ease-in-out;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
 }
 
 footer ul li a img:hover {
     transform: scale(1.15) rotate(5deg);
-    box-shadow: 0 8px 20px rgba(242, 135, 5, 0.5);
+    box-shadow: 0 0.5rem 1.25rem rgba(242, 135, 5, 0.5);
     filter: brightness(1.2);
 }
 
 footer address p {
     margin: 0.5rem 0;
     font-style: normal;
-    transition: color 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 footer address p:hover {
     color: #FFD361;
-    transform: translateX(5px);
+    transform: translateX(0.3rem);
 }
 
 footer > div:last-child p {
@@ -390,7 +378,8 @@ footer > div:last-child p:hover {
     color: #FFD361;
 }
 
-/* Responsive Design - Dispositivos móviles */
+
+/* Movil */
 @media (max-width: 768px) {
     .cabecera h1 {
         font-size: 2.0em;
@@ -459,11 +448,11 @@ footer > div:last-child p:hover {
     }
 
     #historia iframe {
-        height: 250px;
+        height: 16vh;
     }
 
     #autor iframe {
-        height: 300px;
+        height: 19vh;
     }
 
     footer ul {
@@ -475,4 +464,3 @@ footer > div:last-child p:hover {
         height: 10vh;
     }
 }
-
