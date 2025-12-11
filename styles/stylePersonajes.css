@@ -154,8 +154,6 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-
-
 section header h3 {
     font-family: 'Bangers', cursive;
     font-size: 2.5rem;
@@ -226,7 +224,6 @@ article p {
 
 #personajes article img {
     height: 30vh;
-
     border-radius: 10px;
     flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -246,7 +243,7 @@ article p {
 }
 
 /* Wrapper para las dos imágenes superpuestas */
-.image-wrapper {
+.imagen-cambio {
     position: relative;
     width: 15vh;
     height: 20vh;
@@ -278,19 +275,19 @@ article p {
 }
 
 /* Al hacer hover en el wrapper, cambian ambas imágenes */
-.image-wrapper:hover .imagen1_personaje {
+.imagen-cambio:hover .imagen1_personaje {
     opacity: 0;
     transform: scale(1.1) rotate(-5deg);
 }
 
-.image-wrapper:hover .imagen2_personaje {
+.imagen-cambio:hover .imagen2_personaje {
     opacity: 1;
     box-shadow: 0 8px 25px rgba(242, 135, 5, 0.6),
                 0 0 40px rgba(255, 211, 97, 0.5);
 }
 
 /* Efecto de resplandor adicional */
-.image-wrapper:hover::after {
+.imagen-cambio:hover::after {
     position: absolute;
     top: -5px;
     left: -5px;
@@ -314,28 +311,6 @@ article p {
         opacity: 0;
     }
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    #personajes article {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .image-wrapper {
-        width: 25vh;
-        height: 25vh;
-    }
-
-    #personajes article img {
-        width: 25vh;
-        height: 25vh;
-    }
-}
-
-
-
 
 /* Footer */
 footer {
@@ -396,7 +371,7 @@ footer ul li a img:hover {
 footer address p {
     margin: 0.5rem 0;
     font-style: normal;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 footer address p:hover {
@@ -417,12 +392,12 @@ footer > div:last-child p:hover {
 
 /* Responsive Design - Dispositivos móviles */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
+    .cabecera h1 {
+        font-size: 2.0em;
     }
 
-    header h2 {
-        font-size: 1.5rem;
+    .cabecera h2 {
+        font-size: 1.5em;
     }
 
     nav ul {
@@ -442,6 +417,21 @@ footer > div:last-child p:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    #personajes article img {
+        width: 25vh;
+        height: 25vh;
+    }
+    #personajes article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagen-cambio {
+        width: 25vh;
+        height: 25vh;
     }
 
     #personajes article img {

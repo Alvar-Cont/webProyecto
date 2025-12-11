@@ -18,7 +18,6 @@ body {
 }
 
 /* Cabecera */
-/* Cabecera */
 header {
     width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -364,10 +363,25 @@ footer > div:last-child p:hover {
 
 /* Media queries */
 @media (max-width: 795px) {
+    .cabecera h1 {
+        font-size: 2.0em;
+    }
+
+    .cabecera h2 {
+        font-size: 1.5em;
+    }
     fieldset {
         width: 45vh;
         height: 45vh;
         padding: 2rem 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 0.8rem;
     }
     
     legend {
