@@ -225,7 +225,8 @@ article p {
 }
 
 #personajes article img {
-    width: 15vw;
+    height: 30vh;
+
     border-radius: 10px;
     flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);

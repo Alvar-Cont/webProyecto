@@ -374,7 +374,7 @@ footer ul li a img {
 
 footer ul li a img:hover {
     transform: scale(1.15) rotate(5deg);
-    box-shadow: 0 8px 20px rgba(242, 135, 5, 0.5);
+     box-shadow: 0 8px 20px rgba(242, 135, 5, 0.5);/*#F28705 */
     filter: brightness(1.2);
 }
 
