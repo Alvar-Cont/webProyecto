@@ -73,7 +73,6 @@ header {
 /* Navegación */
 nav {
     background-color: #F28705;
-
     z-index: 98;
     width: 100%;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -86,14 +85,6 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul li {
-    margin: 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-nav ul li:hover {
-    transform: translateY(-0.2rem);
-}
 
 nav ul li a {
     display: block;
