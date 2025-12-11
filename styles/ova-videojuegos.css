@@ -74,7 +74,7 @@ nav {
     background-color: #F28705;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 98;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -462,8 +462,8 @@ footer > div:last-child p:hover {
 
     #subir {
         width: 15vh;
-        bottom: 20px;
-        right: 20px;
+        bottom: 5%;
+        right: 20%;
     }
 
     #autor iframe {
