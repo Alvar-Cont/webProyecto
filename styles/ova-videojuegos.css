@@ -73,7 +73,7 @@ header {
 
 /* Navegación */
 nav {
-    background-color: #F28705;
+    background-color: #570000;
     z-index: 98;
     width: 100%;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -277,7 +277,7 @@ section header h3:hover {
 }
 
 #autor figcaption:hover {
-    color: #F28705;
+    color: #570000;
 }
 
 #autor ul {
@@ -292,7 +292,7 @@ section header h3:hover {
 
 #autor ul li:hover {
     transform: translateX(0.6rem);
-    color: #F28705;
+    color: #570000;
 }
 
 #autor iframe {
