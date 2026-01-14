@@ -1,0 +1,350 @@
+/* Importación de fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans:wght@400;700&display=swap');
+
+/* Toda la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background-color: #FFFBF0;
+    color: #570000;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    width: 100%;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.cabecera {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.cabecera img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease-in-out;
+}
+
+.cabecera:hover img {
+    filter: brightness(1.1);
+}
+
+.cabecera h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bangers', cursive;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #570000;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+
+.cabecera h2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #570000;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+
+/* Navegación */
+nav {
+    background-color: #570000;
+    z-index: 98;
+    width: 100%;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+    background-color: #FFD361;
+    color: #570000;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.5);
+}
+/* Main content */
+main {
+    max-width: 75vw;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Botón subir */
+#subir {
+    position: fixed;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    width: 20vh;
+    height: auto;
+    cursor: pointer;
+    z-index: 99;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3));
+}
+
+#subir:hover {
+    transform: scale(1.15) translateY(-0.3rem);
+    filter: drop-shadow(0.3rem 0.3rem 0.75rem rgba(242, 135, 5, 0.5));
+}
+
+#subir:active {
+    transform: scale(1.05);
+}
+
+/* Secciones */
+section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #FFE26F;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.4rem 1.25rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+section:hover {
+    box-shadow: 0 0.6rem 1.875rem rgba(242, 135, 5, 0.25);
+}
+
+section header h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    color: #570000;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+section header h3:hover {
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(242, 135, 5, 0.3);
+}
+
+/* Artículos */
+article {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #FFFBF0;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+
+article h4 {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: #570000;
+    margin-bottom: 1rem;
+    text-shadow: 0.06rem 0.06rem 0.2rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+article p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.strong {
+    font-weight: bold;
+    color: #570000;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.cursiva {
+    font-style: italic;
+}
+
+
+/* Footer */
+footer {
+    background-color: #570000;
+    color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 -0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+
+footer h4 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+footer h4:hover {
+    color: #FFD361;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(242, 135, 5, 0.5);
+}
+
+footer > div {
+    margin: 2rem 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    transition: transform 0.3s ease-in-out;
+}
+
+footer ul li:hover {
+    transform: translateY(-0.3rem);
+}
+
+footer ul li a img {
+    width: 13vh;
+    height: 13vh;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+}
+
+footer ul li a img:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 0.5rem 1.25rem rgba(242, 135, 5, 0.5);
+    filter: brightness(1.2);
+}
+
+footer address p {
+    margin: 0.5rem 0;
+    font-style: normal;
+    transition: 0.3s ease-in-out;
+}
+
+footer address p:hover {
+    color: #FFD361;
+    transform: translateX(0.3rem);
+}
+
+footer > div:last-child p {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+footer > div:last-child p:hover {
+    color: #FFD361;
+}
+
+
+/* Movil */
+@media (max-width: 768px) {
+    .cabecera h1 {
+        font-size: 2.0em;
+    }
+
+    .cabecera h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 0.8rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #personajes article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #personajes article img {
+        width: 25vh;
+        height: 25vh;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #subir {
+        width: 15vh;
+        bottom: 5%;
+        right: 20%;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem;
+    }
+
+    #historia iframe {
+        height: 45vh;
+    }
+
+    #autor iframe {
+        height: 45vh;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    footer ul li a img {
+        width: 10vh;
+        height: 10vh;
+    }
+}
