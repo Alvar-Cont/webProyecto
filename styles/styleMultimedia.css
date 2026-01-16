@@ -198,6 +198,79 @@ article p {
     font-style: italic;
 }
 
+/* seccion multimedia */
+
+#multimedia {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Artículos */
+#multimedia article {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #FFFBF0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+#multimedia article:hover {
+    box-shadow: 0 0.4rem 1.25rem rgba(242, 135, 5, 0.25);
+}
+
+#multimedia article div {
+    text-align: center;
+}
+
+/* Titulos */
+#multimedia h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.2rem;
+    color: #570000;
+    margin-bottom: 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+#multimedia h4 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.6rem;
+    color: #570000;
+    margin: 1rem 0 0.5rem;
+}
+
+
+/* Imagenes GIMP */
+#multimedia article:first-child img {
+    width: 45%;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+#multimedia article:first-child img:hover {
+    transform: scale(1.03);
+}
+
+
+
+/* VIDEO */
+
+#multimedia video {
+    width: 100%;
+    max-width: 45vw;
+}
+
+/* CANVAS */
+
+#lienzo {
+    background-color: #FFFBF0;
+    margin: 1rem auto;
+    display: block;
+}
+
 
 /* Footer */
 footer {
@@ -346,5 +419,18 @@ footer > div:last-child p:hover {
     footer ul li a img {
         width: 10vh;
         height: 10vh;
+    }
+
+    #multimedia article:first-child div {
+        grid-template-columns: 1fr;
+    }
+
+    #multimedia video {
+        max-width: 100%;
+    }
+
+    #lienzo {
+        width: 220px;
+        height: 220px;
     }
 }
